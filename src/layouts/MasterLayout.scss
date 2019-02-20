@@ -1,0 +1,31 @@
+.layout-master {
+    .layout-header {
+        display: block;
+        height: 60px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #DCDEE3;
+    }
+    .layout-main {
+        display: flex;
+        flex-direction: row;
+        .layout-side {
+            flex: 0 0 256px;
+            height: calc(100vh - 60px);
+            border-right: 1px solid #DCDEE3;
+            box-sizing: border-box;
+        }
+        .layout-content {
+            height: calc(100vh - 60px);
+            flex: 1 1;
+            width: calc(100% - 257px);
+            box-sizing: border-box;
+        }
+    }
+    .layout-tube {
+        padding: 1em;
+    }
+}
+
+.layout-master .next-menu.next-nav.next-line.next-ver {
+    border-right-color: transparent !important;
+}
